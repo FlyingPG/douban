@@ -48,6 +48,4 @@
                 $scope.$apply();//更新$scope
             })
     })
-
-
 })(angular);

@@ -45,6 +45,8 @@
                 $scope.maxPage=Math.ceil($scope.total/$scope.pageCount);
                 console.log(data);
                 $scope.$apply();//更新$scope
+                $('.loading').hide();
+                $('.footerzjj').show();
             })
     })
 

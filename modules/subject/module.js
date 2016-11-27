@@ -14,6 +14,7 @@
                 $scope.data=data;
                 console.log(data);
                 $scope.$apply();//更新$scope
+                $('.loading').hide();
             })
     })
 

@@ -26,10 +26,16 @@
         //点击回车搜索电影
         $scope.searchEnter=function () {
             //$location.path可以用来更新
+            $('form').attr({
+                "data-toggle":'collapse'
+            }).click();
+
             console.log($location.path());
             $location.path('/searchMovie_type/'+$scope.searchText);
             //route.updateParams只能追加不能删除前面的参数
             //$route.updateParams({q:'张艺谋'});
+            $scope.searchText='';
+            $('form').removeAttr("data-toggle")
         };
     })
 })(angular);

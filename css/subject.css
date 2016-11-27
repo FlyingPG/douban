@@ -1,7 +1,9 @@
 .actors{
-    margin: 20px;
-    float: right;
-    width: 140px;
+    /*float: right;*/
+    padding: 10px 25px;
+    width: 50%;
+    float: left;
+    display: block;
 }
 .actors>img{
     -webkit-transition: .5s all;
@@ -10,22 +12,31 @@
     -o-transition: .5s all;
     transition: .5s all;
     border-radius: 30px;
+    width: 100%;
 }
 .actors>img:hover{
     transform: scale(1.05);
 }
 .movie_summary{
+    padding:0 15px;
     margin-top: 20px;
-    font:400 18px/24px "microsoft yahei";
+    font:400 14px/24px "microsoft yahei";
+}
+.movie_summary::before{
+    content: "";
+    display: table;
+    clear: both;
 }
 .movie_actor{
-    display: inline-block;
-    margin-top: 15px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
 }
 .main_img{
+    display: block;
+    margin: 0 auto;
     -webkit-transition: .5s all;
     -moz-transition: .5s all;
     -ms-transition: .5s all;
@@ -37,3 +48,18 @@
     transform:translateY(2px);
     box-shadow:3px 3px 3px 3px gray ;
 }
+.main{
+    width: 100%;
+}
+.page-header{
+    font-size: 20px;
+    font-family: "microsoft yahei";
+}
+.media-heading{
+    font-size: 18px;
+    font-family: "microsoft yahei";
+}
+.media-body p {
+    font-size: 14px;
+}
+

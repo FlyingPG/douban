@@ -1,3 +1,5 @@
+<div class="loading"></div>
+
 <h1 class="page-header">{{title}}</h1>
 <div class="list-group ">
     <a ng-href="{{'#/subject/'+item.id}}" class="list-group-item" ng-repeat="item in subjects">
@@ -19,7 +21,7 @@
         </div>
     </a>
 </div>
-<div>
+<div class="footerzjj" style="display: none">
     <p>总共：{{total}}条记录，第{{page}}/{{maxPage}}页  <input type="text" style="width:20px" ng-model="pageNum"><button ng-click="submit(pageNum)">页</button></p>
     <nav>
         <ul class="pager">
